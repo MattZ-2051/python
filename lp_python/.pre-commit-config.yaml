@@ -1,0 +1,17 @@
+repos:
+- repo: local
+  hooks:
+  - id: pytest
+    name: black
+    stages: [commit]
+    language: system
+    entry: pipenv run black .
+    types: [python]
+  # TODO (matt) - add when tests are implemented
+  # - id: pytest
+  #   name: pytest
+  #   stages: [commit]
+  #   language: system
+  #   entry: pipenv run pytest src/tests
+  #   types: [python]
+  #   pass_filenames: false

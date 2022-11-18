@@ -1,0 +1,29 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mysql-connector-python = "*"
+pylint = "*"
+pre-commit = "*"
+pytest = "*"
+python-dotenv = "*"
+requests = "*"
+google-cloud-vision = "*"
+pandas = "*"
+google-cloud-storage = "*"
+numpy = "*"
+shapely = "*"
+windows-curses = "*"
+geoalchemy2 = "*"
+
+[dev-packages]
+pylint = "*"
+black = "*"
+
+[requires]
+python_version = "3.9"
+
+[scripts]
+main = "python src/main.py"

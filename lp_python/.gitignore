@@ -1,0 +1,7 @@
+.env
+Pipfile.lock
+.venv
+.vscode
+key.json
+/assets
+__pycache__
